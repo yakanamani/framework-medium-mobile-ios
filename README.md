@@ -142,7 +142,7 @@ Si vous souhaitez tester une application mobile de préférence sur `IOS` et `Ma
   - 📌**Simulateur** : </br>
     - Le simulateur doit être lancé et en bon état de marche
 
-#### 🎯Mise à jour du fichier testng.xml
+## 🎯Mise à jour du fichier testng.xml
 - Remplir les informations concernant le device utilisé pour les tests automatisés  
   Les informations concernant les caractéristiques du device sont a modifier dans le fichier testng.xml (path_du_repertoire_du_framework/testng.xml)
 
@@ -157,20 +157,20 @@ Si vous souhaitez tester une application mobile de préférence sur `IOS` et `Ma
      Il prendra pour valeur **true** or "false"
     - true = simulator
     - false = real device
-- **exemple**
+- 📌**exemple**
 ```xml
         <parameter name="platformName" value="iOS"/>
         <parameter name="udid" value="virtual_device_udid"/>
         <parameter name="deviceName" value="virtual_device_name"/>
         <parameter name="virtualDevice" value="true_or false"/>
 ```
-- **Paramètres obligatoires** :
+- 📌**Paramètres obligatoires** :
   - udid
   - deviceName
   - virtualDevice
   - wdaLocalPort
   - webkitDebugProxyPort
-- **Important** : la valeur choisie pour chacun des paramètres suivants doit être unique et différente des autres valeurs
+- 📌**Important** : la valeur choisie pour chacun des paramètres suivants doit être unique et différente des autres valeurs
   - wdaLocalPort
   - webkitDebugProxyPort
 
