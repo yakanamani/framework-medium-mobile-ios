@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <test name="Tests on virtual iOS device">
+        <parameter name="platformName" value="iOS"/>
+        <parameter name="udid" value="B6B097FE-864D-483D-861C-21726B44E5B1"/>
+        <parameter name="deviceName" value="Nana"/>
+        <parameter name="virtualDevice" value="true"/>
+        <parameter name="wdaLocalPort" value="10002"/>
+        <parameter name="webkitDebugProxyPort" value="11002"/>
+        <classes>
+            <class name="FrameworkMediumIos.runners.MytestngRunnerTest"/>
+        </classes>
+    </test>
+</suite>
