@@ -3,7 +3,7 @@
 <suite name="Suite">
     <test name="Tests on virtual iOS device">
         <parameter name="platformName" value="iOS"/>
-        <parameter name="udid" value="B6B097FE-864D-483D-861C-21726B44E5B1"/>
+        <parameter name="udid" value="5D87C5DC-10EB-4056-955E-E0AE6118E0A7"/>
         <parameter name="deviceName" value="Nana"/>
         <parameter name="virtualDevice" value="true"/>
         <parameter name="wdaLocalPort" value="10002"/>

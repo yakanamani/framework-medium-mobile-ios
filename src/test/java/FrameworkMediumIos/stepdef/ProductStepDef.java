@@ -2,9 +2,9 @@ package FrameworkMediumIos.stepdef;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.Assert;
 import FrameworkMediumIos.pages.ProductDetailsPage;
 import FrameworkMediumIos.pages.ProductsPage;
+import org.testng.Assert;
 
 public class ProductStepDef {
     ProductsPage productsPage =new ProductsPage();
@@ -32,7 +32,7 @@ public class ProductStepDef {
         boolean titleCheck = productDetailsPage.getTitle().equalsIgnoreCase(title);
         boolean descCheck = productDetailsPage.getDesc().equalsIgnoreCase(description);
         boolean priceCheck = productDetailsPage.getPrice().equalsIgnoreCase(price);
-        Assert.assertTrue("titleCheck = " + titleCheck + ", descCheck = " + descCheck + ", priceCheck = " + priceCheck,
-                titleCheck & descCheck & priceCheck);
+        Assert.assertTrue(
+                titleCheck & descCheck & priceCheck, "titleCheck = " + titleCheck + ", descCheck = " + descCheck + ", priceCheck = " + priceCheck);
     }
 }
